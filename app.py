@@ -16,6 +16,11 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
 
+import dagshub
+dagshub.init(repo_owner='shivgany5', repo_name='mlflowexperiments', mlflow=True)
+
+import mlflow
+
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
